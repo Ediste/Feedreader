@@ -86,7 +86,6 @@ $(function() {
             expect(feedContainer.hasChildNodes()).toBeTruthy();
 
             const entryLinks = feedContainer.querySelectorAll('.entry-link');
-
             expect(entryLinks.length).not.toBe(0);
 
             for (const entryLink of entryLinks) {
@@ -100,7 +99,6 @@ $(function() {
 
     /* Test suite for feed selection */
     describe('New Feed Selection', function() {
-
         let initialFeedContent, anotherFeedContent;
 
         beforeEach(function(done) {
